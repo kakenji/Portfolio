@@ -2,10 +2,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Nunito";
 }
 
 body {
-  background: #433838;
+  background: rgb(20, 20, 20);
+}
+
+p {
+  font-size: 16px;
+  line-height: 26px;
+  color: rgb(240, 240, 240);
+}
+
+h2 {
+  color: rgb(240, 240, 240);
 }
 
 .container .navbar {
@@ -14,7 +25,10 @@ body {
   align-items: center;
   padding: 0 20px;
   height: 70px;
-  background-color: #382C2C;
+  width: 100%;
+  background-color: rgb(255, 204, 0);
+  position: fixed;
+  z-index: 1;
 }
 
 .navbar ul {
@@ -24,21 +38,145 @@ body {
 }
 .navbar ul a {
   text-decoration: none;
-  color: #fff;
+  color: rgb(240, 240, 240);
   border-radius: 10px;
 }
 .navbar ul a:hover {
   cursor: pointer;
-  background-color: #fff;
+  background-color: rgb(186, 85, 211);
   color: black;
   font-size: 17px;
   padding: 6px;
   transition: 0.3s;
 }
 
-img {
+.container #first-part {
+  display: flex;
+  height: 650px;
+  align-items: center;
+}
+.container #first-part img {
+  border-radius: 5%;
   width: 300px;
-  height: 300px;
+  height: 232.5px;
+  margin: 0 80px;
+}
+.container #first-part .lside {
+  width: 1000px;
+  margin: 0 60px;
+  letter-spacing: 0.5px;
+  width: 100%;
+}
+.container #first-part .lside h1 {
+  font-size: 38px;
+  font-weight: 500;
+  color: rgb(240, 240, 240);
+}
+.container #first-part .lside h1 .nome {
+  color: rgb(186, 85, 211);
+  font-weight: 700;
+}
+
+.container #second-part {
+  display: flex;
+  align-items: center;
+  height: 400px;
+}
+.container #second-part img {
+  border-radius: 5%;
+  width: 300px;
+  height: 252.5px;
+  margin: 0 80px;
+}
+.container #second-part .lside-two {
+  width: 1000px;
+  margin: 0 60px;
+  letter-spacing: 0.5px;
+  width: 100%;
+}
+
+.container #third-part {
+  width: 1400px;
+  margin: auto;
+  margin-top: 100px;
+}
+.container #third-part ul {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  background-color: rgb(186, 85, 211);
+  border-radius: 25px;
+}
+.container #third-part li {
+  width: 50%;
+  display: flex;
+  height: 100px;
+  padding-left: 5%;
+  position: relative;
+  align-items: center;
+  font-weight: 600;
+}
+.container #third-part .exp-profissional {
+  margin-left: 60px;
+}
+.container #third-part img {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+}
+
+.container #fourth-part {
+  margin-top: 100px;
+  height: 800px;
+}
+.container #fourth-part .ifpr-sec {
+  display: flex;
+  align-items: center;
+  height: 400px;
+}
+.container #fourth-part .positivo-sec {
+  display: flex;
+  align-items: center;
+  height: 400px;
+}
+.container #fourth-part .positivo-sec .lside-four-pos {
+  margin: 0 60px;
+  padding-left: 300px;
+  width: 100%;
+}
+.container #fourth-part img {
+  border-radius: 5%;
+  width: 300px;
+  height: 252.5px;
+  margin: 0 80px;
+}
+.container #fourth-part .rside-four {
+  width: 1000px;
+  letter-spacing: 0.5px;
+}
+
+.container #fifth-part {
+  width: 1400px;
+  margin: auto;
+}
+.container #fifth-part .skill {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  background: rgb(186, 85, 211);
+  border-radius: 25px;
+  margin-top: 20px;
+  width: 1400px;
+  height: 100px;
+  padding: 0 30px;
+}
+.container #fifth-part p {
+  color: rgb(240, 240, 240);
+  font-weight: 600;
+}
+.container #fifth-part img {
+  height: 70px;
+  width: 70px;
 }
 
 /*# sourceMappingURL=style.css.map */

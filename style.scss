@@ -4,15 +4,47 @@ $dark: #382C2C;
 $middle-red: #984B4B;
 $middle-dark-red: #6E4848;
 $light-dark: #433838;
+$icon: #13C2D2;
+
+// $bg: rgb(255, 245, 239);
+// $navbar: rgb(98, 155, 226);
+// $letter: rgb(34, 34, 34);
+// $destaque: rgb(255, 221, 89);
+
+// $bg: rgb(34, 34, 34);
+// $navbar: rgb(255, 170, 0);
+// $destaque: rgb(100, 149, 237);
+// $letter: rgb(255, 255, 255);
+
+// $bg: rgb(20, 20, 20);
+// $navbar: rgb(255, 204, 0);
+// $destaque: rgb(100, 149, 237);
+// $letter: rgb(240, 240, 240);
+
+$bg: rgb(20, 20, 20);
+$navbar: rgb(255, 204, 0);
+$destaque: rgb(186, 85, 211);
+$letter: rgb(240, 240, 240);
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Nunito";
 }
 
 body {
-    background: $light-dark;
+    background: $bg;
+}
+
+p {
+    font-size: 16px;
+    line-height: 26px;
+    color: $letter;
+}
+
+h2 {
+    color: $letter;
 }
 
 .container .navbar {
@@ -22,7 +54,10 @@ body {
     // border: 2px solid green;
     padding: 0 20px;
     height: 70px;
-    background-color: $dark;
+    width: 100%;    
+    background-color: $navbar;
+    position: fixed;
+    z-index: 1;
 }
 
 .navbar ul {
@@ -34,14 +69,14 @@ body {
 
     a {
         text-decoration: none;
-        color: #fff;
+        color: $letter;
         border-radius: 10px;
         // border: 2px solid blue;
     }
 
     a:hover {
         cursor: pointer;
-        background-color: #fff;
+        background-color: $destaque;
         color: black;
         font-size: 17px;
         padding: 6px;
@@ -49,8 +84,171 @@ body {
     }
 }
 
+.container #first-part {
+    display: flex;
+    // border: 2px solid red;
+    height: 650px;
+    align-items: center;
 
-img {
-    width: 300px;
-    height: 300px;
+    img {
+        border-radius: 5%;
+        width: 300px;
+        height: 232.5px;
+        // this margin settled to 80 makes the image static
+        margin: 0 80px;
+    }
+
+    .lside {
+        // border: 2px solid blue;
+        width: 1000px;
+        margin: 0 60px;
+        letter-spacing: .5px;
+        width: 100%;
+        
+        h1 {
+            font-size: 38px;
+            font-weight: 500;
+            color: $letter;
+
+            .nome {
+                color: $destaque;
+                font-weight: 700;
+            }
+        }
+
+    }
+}
+
+.container #second-part {
+    display: flex;
+    align-items: center;
+    // border: 2px solid red;
+    height: 400px;
+
+    img {
+        border-radius: 5%;
+        width: 300px;
+        height: 252.5px;
+        margin: 0 80px;
+    }
+
+    .lside-two {
+        width: 1000px;
+        margin: 0 60px;
+        letter-spacing: .5px;
+        width: 100%;
+        // border: 2px solid blue;
+    }
+}
+
+.container #third-part {
+    // border: 2px solid red;
+    width: 1400px;
+    margin: auto;
+    margin-top: 100px;
+
+    ul {
+        display: flex;
+        list-style-type: none;
+        flex-wrap: wrap;
+        background-color: $destaque;
+        border-radius: 25px;
+    }
+
+    li {
+        width: 50%;
+        display: flex;
+        height: 100px;
+        padding-left: 5%;
+        // border: 2px solid  pink;
+        position: relative;
+        align-items: center;
+        font-weight: 600;
+    }
+
+    .exp-profissional {
+        margin-left: 60px;
+        // margin: 40px;
+        // padding-left: 80px;
+        // border: 2px solid yellow;
+        // text-indent: 80px;
+    }
+
+    img {
+        position: absolute;
+        // margin-top: 20px;
+        height: 60px;
+        width: 60px;    
+        // border: 2px solid blue;
+    }
+}
+
+.container #fourth-part {
+    margin-top: 100px;
+    // border: 2px solid red;
+    height: 800px;
+
+    .ifpr-sec {
+        display: flex;
+        align-items: center;
+        // border: 2px solid green;
+        height: 400px;
+    }
+
+    .positivo-sec {
+        display: flex;
+        align-items: center;
+        // border: 2px solid yellow;
+        height: 400px;
+
+        .lside-four-pos {
+            margin: 0 60px;
+            padding-left: 300px;
+            // border: 2px solid pink;
+            width: 100%;
+        }
+    }
+    
+    img {
+        border-radius: 5%;
+        width: 300px;
+        height: 252.5px;
+        margin: 0 80px;
+    }
+
+    .rside-four {
+        width: 1000px;
+        // margin: 0 60px;
+        letter-spacing: .5px;
+        // border: 2px solid blue;
+    }
+}
+
+.container #fifth-part {
+    // border: 2px solid red;
+    width: 1400px;
+    margin: auto;
+
+    .skill {
+        display: flex;
+        align-items: center;
+        font-size: 28px;
+        background: $destaque;
+        border-radius: 25px;
+        // border: 2px solid yellow;
+        margin-top: 20px;
+        width: 1400px;
+        height: 100px;
+        padding: 0 30px;
+    }
+
+    p {
+        color: $letter;
+        font-weight: 600;
+    }
+
+    img {
+        height: 70px;
+        width: 70px;
+    }
 }

@@ -5,25 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
     <link href="style.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div class="container">
         <div class="navbar">
             <h2>Sobre mim</h2>
             <ul>
-                <li><a href="">Informações pessoais</a></li>
-                <li><a href="">Objetivo profissional</a></li>
-                <li><a href="">Experiência profissional</a></li>
-                <li><a href="">Formação acadêmica</a></li>
-                <li><a href="">Habilidades e competências</a></li>
-                <li><a href="">Projetos</a></li>
+                <li><a href="#first-part">Informações pessoais</a></li>
+                <li><a href="#second-part">Objetivo profissional</a></li>
+                <li><a href="#third-part">Experiência profissional</a></li>
+                <li><a href="#fourth-part">Formação acadêmica</a></li>
+                <li><a href="#fifth-part">Habilidades e competências</a></li>
+                <li><a href="#sixth-part">Projetos</a></li>
             </ul>
         </div>
 
-        <div class="first-part">
+        <div id="first-part">
             <div class="lside">
-                <h1>Kayky Kenji</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta voluptates doloremque ab suscipit aliquam quam ex sunt vero labore itaque ratione nostrum minima repellendus, eos at aspernatur in officia quis?</p>
+                <h1>Olá, meu nome é <span class="nome">Kayky Kenji</span></h1>
+                <p>Nascido no Japão, na província de Ishikawa, vim para o Brasil em 2006, onde morei em Curitiba até 2013, e então me mudei para Londrina, onde me encontro atualmente. Nascido sob neve, em 1 de janeiro de 2005, tenho 19 anos.</p>
+                </br>
+                <p>No início de 2023, me mudei com minha família e atualmente moro no Jardim Jóquei Clube.</p>
+                <p>kaykyjk01@gmail.com</p>
+                <p>(43) 99869-4335</p>
+
             </div>
             
             <div class="rside">
@@ -31,46 +41,59 @@
             </div>
         </div>
 
-        <div class="second-part">
+        <div id="second-part">
             <div class="lside-two">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur tenetur architecto maxime nesciunt assumenda. Impedit beatae quas facilis esse laudantium? Corporis fuga ipsum placeat veniam, cum modi saepe! Repudiandae, vero.</p>
+                <p>Meu objetivo profissional é crescer na área de TI, trabalhando futuramente como desenvolver FrontEnd ou BackEnd. Assim como todo desenvolvedor, também sonho em trabalhar remotamente para fora, ganhando em dólar ou euro. E apesar das adversidades, estudo para conseguir alcançar uma vida confortável futuramente.</p>
             </div>
 
             <div class="rside-two">
-                <img src="Portfolio/images/pexels-pixabay-163142.jpg" alt="">
+                <img src="images/pexels-pixabay-163142.jpg" alt="">
             </div>
         </div>
 
-        <div class="third-part">
+        <div id="third-part">
             <ul>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, vero.</li>
-                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, enim?</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, in.</li>
-                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, exercitationem?</li>
+                <li><img src="/Portfolio/images/bxl-html5.svg" alt=""><span class="exp-profissional">Assistente de almoxarife, auxiliando na conferência de material e entrega de ferramentas</br>Fev. 2024 - Jul. 2024</br>A. Yoshii</span></li>
+                <li><img src="/Portfolio/images/bxl-html5.svg" alt=""><span class="exp-profissional">Service Desk, auxiliando no suporte à obras e colaboradores em relação à equipamentos, acessos e problemas</br>Jul. 2024 - ...</br>A. Yoshii</span></li>
+                <!-- <li><img src="/Portfolio/images/bxl-html5.svg" alt=""><span class="exp-profissional">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, in.</span></li>
+                <li><img src="/Portfolio/images/bxl-html5.svg" alt=""><span class="exp-profissional">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, exercitationem?</span></li>
+                <li><img src="/Portfolio/images/bxl-html5.svg" alt=""><span class="exp-profissional">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, exercitationem?</span></li>
+                <li><img src="/Portfolio/images/bxl-html5.svg" alt=""><span class="exp-profissional">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, exercitationem?</span></li> -->
             </ul>
         </div>
 
-        <div class="fourth-part">
-            <div class="lside-four">
-                <img src="/Portfolio/images/IFPRcampuslondrina.jpeg" alt="Imagem de IFPR campus Londrina">
+        <div id="fourth-part">
+            <div class="ifpr-sec">
+                <div class="lside-four-ifpr">
+                    <img src="/Portfolio/images/ifpr.jpeg" alt="Imagem de IFPR campus Londrina">
+                </div>
+                <div class="rside-four">
+                    <p>Técnico em Biotecnologia pelo Instituto Federal do Paraná campus Londrina.</br>Fev. 2020 - Dez. 2023</p>
+                </div>
             </div>
-            <div class="rside-four">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptatum quam numquam ab earum adipisci ex optio? Corporis, reprehenderit in?</p>
+
+            <div class="positivo-sec">
+                <div class="lside-four-pos">
+                    <p>Graduado em Engenharia de Software pela Universidade Positivo Campus Londrina.</br>Fev. 2024 - ...</p>
+                </div>
+                <div class="rside-four-pos">
+                    <img src="/Portfolio/images/positivo.jpg" alt="Imagem da faculdade positivo">
+                </div>                
             </div>
         </div>
 
-        <div class="fifth-part">
-            <div class="sone">
-                <img src="#" alt="">
-                <p>Lorem ipsum dolor sit amet.</p>
+        <div id="fifth-part">
+            <div class="skill">
+                <img src="images/bx-brain.svg" alt="">
+                <p><strong>Pensamento analítico:</strong> capacidade de interpretar dados, identificar padrões e tomar decisões baseadas em fatos e evidências, garantindo soluções mais precisas e adequadas para diferentes cenários.</p>
             </div>
-            <div class="stwo">
-                <img src="#" alt="">
-                <p>Lorem ipsum dolor sit amet.</p>
+            <div class="skill">
+                <img src="images/bx-code-curly.svg" alt="">
+                <p><strong>Conhecimentos Técnicos:</strong> domínio de ferramentas e tecnologias específicas da área de atuação, como linguagens de programação, softwares, ou metodologias de trabalho, essencial para execução de tarefas especializadas.</p>
             </div>
-            <div class="sthree">
-                <img src="#" alt="">
-                <p>Lorem ipsum dolor sit amet.</p>
+            <div class="skill">
+                <img src="images/bx-edit-alt.svg" alt="">
+                <p><strong>Capacidade de Aprendizado Rápido:</strong> habilidade de assimilar novos conhecimentos, tecnologias e processos rapidamente, mantendo-se atualizado e relevante em um mercado em constante evolução.</p>
             </div>
         </div>
 
